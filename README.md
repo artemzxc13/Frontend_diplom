@@ -1,1 +1,3 @@
-# Frontend_diplom
+# Диплом 
+
+### Frontend для дипломного проекта News Explorer
