@@ -1,0 +1,13 @@
+@import './_place/_footer/menu__page_place_footer.css';
+@import './_border/_fixed/menu__page_border_fixed.css';
+@import './_border/_fix/menu__page_border_fix.css';
+@import './__list/menu__page_list_header.css';
+
+.menu__page  {
+  display: flex;
+  align-items: center;
+}
+
+.menu__page :last-child {
+  margin-right: 0;
+}

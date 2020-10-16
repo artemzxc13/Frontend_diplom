@@ -1,0 +1,7 @@
+@import './_type/_header/root-section_header.css';
+@import './_type/_news/root-section_type_news.css';
+
+.root-section {
+  width: 100%;
+  margin: 0 auto;
+}

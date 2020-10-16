@@ -1,0 +1,14 @@
+@import './__header/menu__header.css';
+@import './_place/_footer/menu_place_footer.css';
+@import './__page/menu__page.css';
+@import './__link/menu__link.css';
+
+
+
+.menu {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
