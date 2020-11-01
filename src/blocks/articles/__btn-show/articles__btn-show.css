@@ -1,0 +1,39 @@
+@import url(_hidden/articles__btn-show_hidden.css);
+.articles__btn-show {
+    background: #FFFFFF;
+    border-radius: 80px;
+    color: #1A1B22;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 64px auto 0;
+    width: 288px;
+    height: 64px;
+     font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 1000px) {
+    .articles__btn-show {
+        margin-top: calc((100vw - 768px)/(1000 - 768)*(64 - 32) + 32px);
+        width: calc((100vw - 768px)/(1000 - 768)*(288 - 240) + 240px);
+        height: calc((100vw - 768px)/(1000 - 768)*(64 - 56) + 56px);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .articles__btn-show {
+        margin-top: 22px;
+        width: 288px;
+        height: 56px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .articles__btn-show {
+        margin-top: 16px;
+    }
+}

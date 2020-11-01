@@ -1,0 +1,6 @@
+@media screen and (max-width: 1030px) {
+    div.card__message-container_message {
+        
+        display: none;
+    }
+}

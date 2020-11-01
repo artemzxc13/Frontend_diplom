@@ -1,12 +1,40 @@
-@import './_invisible/news_invisible.css';
-@import './__title/news__title.css';
-@import './__cards/news__cards.css';
-
+@import url(__content/news__content.css);
+@import url(__header/news__header.css);
+@import url(__save-articles/news__save-articles.css);
+@import url(__keywords/news__keywords.css);
+@import url(__keyword/news__keyword.css);
 .news {
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    background-color: #ffffff;
+    padding: 40px 40px 56px;
+}
+
+@media screen and (max-width: 900px) {
+    .news {
+        padding-top: calc((100vw - 768px)/(900 - 768)*(40 - 24) + 24px);
+        padding-bottom: calc((100vw - 768px)/(900 - 768)*(56 - 32) + 32px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .news {
+        padding-top: 24px;
+        padding-bottom: 32px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .news {
+        padding-top:  calc((100vw - 320px)/(767 - 320)*(24 - 8) + 8px);
+        padding-left: calc((100vw - 320px)/(767 - 320)*(40 - 16) + 16px);
+        padding-right: calc((100vw - 320px)/(767 - 320)*(40 - 16) + 16px);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .news {
+        padding-top: 8px;
+        padding-left: 16px;
+        padding-right: 16px;
+        width: 288px;
+    }
 }

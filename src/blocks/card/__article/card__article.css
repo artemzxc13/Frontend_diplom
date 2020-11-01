@@ -1,16 +1,18 @@
 .card__article {
-  flex: 1 0 auto;
-  margin-bottom: 18px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
-@media (min-width: 768px) and (max-width: 1439px) {
-  .card__article {
-    margin-bottom: calc((100vw - 768px)/(1439 - 768) * (18 - 12) + 12px);
-  }
+@media screen and (max-width: 900px) {
+    .card__article {
+        max-height: calc((100vw - 768px)/(900 - 768)*(280 - 238) + 238px);
+    }
 }
 
-@media (max-width: 767px) {
-  .card__article {
-    margin-bottom: 12px;
-  }
+@media screen and (max-width: 768px) {
+    .card__article {
+        max-height: 238px;
+    }
 }

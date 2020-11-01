@@ -1,5 +1,15 @@
-@import './__menu-icon/header__menu-icon.css';
-@import './__search-section/header__search-section.css';
-@import './__info-block/header__info-block.css';
-@import './__title/header__title.css';
-@import './__subtitle/header__subtitle.css';
+@import url(./__logo/header__logo.css);
+@import url(__menu-container/header__menu-container.css);
+@import url(./__container/header__container.css);
+@import url(_black-underline/header_black-underline.css);
+@import url(__menu-button/header__menu-button.css);
+.header {
+    padding: 0 40px;
+    box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 750px) {
+    .header {
+        padding: 0;
+    }
+}

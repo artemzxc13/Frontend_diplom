@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>News Explorer</title>
+  <link rel="icon" href="<%=require('../images/favicon.png')%>">
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css %>">
+</head>
+
+<body>
+  <div class="root">
+    <header class="header header_black-underline">
+      <div class="header__container">
+        <a class="header__logo header__logo_black-font">NewsExplorer</a>
+        <div class="header__menu-button header__menu-button_black"></div>
+        <nav class="header__menu-container menu">
+          <ul class="menu__pages-container">
+            <li class="menu__page menu__page_black"><a href="./index.html">Главная</a></li>
+            <li class="menu__page menu__page_article menu__page_link menu__page_link-black"><a href="./articles.html">Сохранённые
+              статьи</a></li>
+          </ul>
+          <button class="menu__button_signin menu__button_signin_black">
+            <span class="menu__username">Выйти</span>
+            <img class="menu__logout-icon" src="<%=require('../images/logout-black.png')%>"
+                 alt="Кнопка для выхода из сервиса">
+          </button>
+        </nav>
+      </div>
+    </header>
+    
+      <section class="news">
+        <div class="news__content">
+          <h2 class="news__header">Сохранённые статьи</h2>
+          <p class="news__save-articles"><span class="news__username">Здравствуйте</span>,&nbspу&nbspвас&nbsp<span class="news__summ">0</span> сохранённых <span class="news__article-change">статей</span></p>
+          <p class="news__keywords">По ключевым словам: <span class="news__keyword">Природа</span>, <span
+                  class="news__keyword">Тайга</span> и <span class="news__keyword news__keyword-rest">2 другим</span></p>
+        </div>
+      </section>
+      <section class="articles articles_displayed articles_saved">
+        <div class="articles__content">
+          <div class="articles__container">
+            <div class="card">
+              <div class="card__sample"
+                   style="background-image: url('<%= require(`../images/saved-card-1.jpg`) %>')">
+                <div class="card__button-container">
+                  <button class="card__button">
+                    <img class="card__button-icon" src="<%=require('../images/delete-button.svg')%>"
+                         alt="Кнопка для выхода из сервиса">
+                  </button>
+                  <div class="card__message-container card__message-container_message">
+                    <span class="card__message">Убрать из сохранённых</span>
+                  </div>
+                  <div class="card__message-container card__message-container_keyword">
+                    <span class="card__keyword">Природа</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card__content">
+                <div class="card__article">
+                  <p class="card__date">2 августа, 2019</p>
+                  <h2 class="card__header">Лесные огоньки: история одной фотографии</h2>
+                  <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы
+                    запечатлеть ускользающую красоту одного
+                    из местных чудес природы.</p>
+                  <p class="card__link">Афиша</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="circle-preloader">
+          <i class="circle-preloader__animation"></i>
+          <p class="circle-preloader__message">Идет поиск новостей...</p>
+        </div>
+      </section>
+    
+    <footer class="footer">
+      <div class="footer__content">
+        <p class="footer__copyrigth">© 2020 Supersite, Powered by News API</p>
+        <nav class="menu footer__menu-container ">
+          <ul class="menu__pages-container menu__pages-container_footer">
+            <li class="menu__page menu__page_footer"><a href="./index.html">Главная</a></li>
+            <li class="menu__page menu__page_footer"><a href="https://praktikum.yandex.ru/">Яндекс.Практикум</a></li>
+          </ul>
+          <div class="menu__icons-container">
+            <a class="menu__icon" href="https://github.com/artemzxc13">
+              <img src="<%=require('../images/icon-github.png')%>"
+                   alt="Ссылка на гитхаб">
+            </a>
+            <a class="menu__icon" href="https://www.facebook.com/">
+              <img src="<%=require('../images/icon-facebook.png')%>"
+                   alt="Ссылка на фейсбук">
+            </a>
+          </div>
+      </div>
+  </div>
+  </footer>
+  </div>
+  <script src="<%= htmlWebpackPlugin.files.js %>"></script>
+</body>
+
+</html>
