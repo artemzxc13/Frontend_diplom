@@ -1,0 +1,8 @@
+div.card__message-container_keyword {
+    opacity: 1;
+    margin-right: auto;
+    max-width: 43%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    justify-content: left;
+}

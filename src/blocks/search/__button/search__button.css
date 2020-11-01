@@ -1,19 +1,26 @@
 .search__button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 168px;
+
+    background: #2F71E5;
+    border: 1px solid #2F71E5;
+    box-sizing: border-box;
+    border-radius: 100px;
+    cursor: pointer;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
 }
 
-@media (max-width: 767px) {
-  .search__button {
-    position: static;
-    width: 288px;
-  }
-}
-
-@media (max-width: 600px) {
-  .search__button {
-    width: 100%;
-  }
+@media screen and (max-width: 670px) {
+    .search__button {
+        top: 72px;
+        width: 100%;
+    }
 }

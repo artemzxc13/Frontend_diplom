@@ -1,0 +1,11 @@
+@import url(_displayed/not-found_displayed.css);
+@import url(__icon/not-found__icon.css);
+@import url(__header/not-found__header.css);
+@import url(__message/not-found__message.css);
+
+.not-found {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+ 

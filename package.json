@@ -1,50 +1,50 @@
 {
-  "name": "diplom-front",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "rimraf dist && cross-env NODE_ENV=production webpack --mode production",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --watch",
-    "deploy": "cross-env NODE_ENV=production gh-pages -d dist"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/artemzxc13/Frontend_diplom.git"
-  },
-  "author": "tomskij",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/artemzxc13/Frontend_diplom/issues"
-  },
-  "homepage": "https://github.com/artemzxc13/Frontend_diplom#readme",
-  "dependencies": {
-    "@babel/core": "^7.12.0",
-    "@babel/preset-env": "^7.12.0",
-    "autoprefixer": "^10.0.1",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.1.0",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "core-js": "^3.6.5",
-    "cross-env": "^7.0.2",
-    "css-loader": "^5.0.0",
-    "cssnano": "^4.1.10",
-    "file-loader": "^6.1.1",
-    "gh-pages": "^3.1.0",
-    "html-webpack-plugin": "^4.5.0",
-    "image-webpack-loader": "^7.0.1",
-    "mini-css-extract-plugin": "^0.9.0",
-    "optimize-css-assets-webpack-plugin": "^5.0.4",
-    "path": "^0.12.7",
-    "postcss-loader": "^4.0.4",
-    "style-loader": "^2.0.0",
-    "webpack": "^4.44.2",
-    "webpack-dev-server": "^3.11.0",
-    "webpack-md5-hash": "0.0.6"
-  },
-  "devDependencies": {
-    "webpack-cli": "^3.3.10"
-  }
+    "name": "diplom-front",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/pages/index.js",
+    "scripts": {
+        "build": "rimraf dist && cross-env NODE_ENV=production webpack --mode production",
+        "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --watch",
+        "deploy": "cross-env NODE_ENV=production gh-pages -d dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/artemzxc13/Frontend_diplom.git"
+    },
+    "author": "tomskij",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/artemzxc13/Frontend_diplom/issues"
+    },
+    "homepage": "https://github.com/artemzxc13/Frontend_diplom#readme",
+    "devDependencies": {
+        "@babel/cli": "~7.10.1",
+        "@babel/core": "~7.10.2",
+        "@babel/preset-env": "~7.10.2",
+        "autoprefixer": "~9.8.0",
+        "babel-loader": "~8.1.0",
+        "cross-env": "~7.0.2",
+        "css-loader": "~3.5.3",
+        "cssnano": "~4.1.10",
+        "eslint": "^7.7.0",
+        "eslint-config-airbnb-base": "^14.2.0",
+        "eslint-plugin-import": "^2.22.0",
+        "file-loader": "~6.0.0",
+        "gh-pages": "^2.2.0",
+        "html-webpack-plugin": "~4.3.0",
+        "image-webpack-loader": "~6.0.0",
+        "mini-css-extract-plugin": "~0.9.0",
+        "optimize-css-assets-webpack-plugin": "~5.0.3",
+        "postcss-loader": "~3.0.0",
+        "style-loader": "~1.2.1",
+        "webpack": "~4.43.0",
+        "webpack-cli": "~3.3.11",
+        "webpack-dev-server": "~3.11.0",
+        "webpack-md5-hash": "0.0.6"
+    },
+    "dependencies": {
+        "babel-polyfill": "~6.26.0",
+        "core-js": "~3.4.1"
+    }
 }
